@@ -1,54 +1,58 @@
-/* 🎈 Balloons */
-.balloons {
-    position: fixed;
-    bottom: -100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+    background: #f8f8f8;
+    color: #333;
 }
 
-.balloon {
-    width: 40px;
-    height: 60px;
-    background: red;
-    border-radius: 50%;
-    animation: float 6s infinite;
+.section {
+    margin-top: 100px;
 }
 
-.balloon:nth-child(2) { background: blue; animation-delay: 1s; }
-.balloon:nth-child(3) { background: yellow; animation-delay: 2s; }
-.balloon:nth-child(4) { background: green; animation-delay: 3s; }
-
-@keyframes float {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-800px); }
+.hidden {
+    display: none;
 }
 
-/* 🎂 Cake animation */
+/* Buttons */
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Photos */
+.photo {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Cake */
 .cake {
     font-size: 60px;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: bounce 2s infinite;
+    position: relative;
 }
 
-@keyframes bounce {
-    0%, 100% { transform: translateX(-50%) translateY(0); }
-    50% { transform: translateX(-50%) translateY(-20px); }
+/* Simple candle */
+.candle {
+    width: 6px;
+    height: 20px;
+    background: black;
+    margin: auto;
+    position: relative;
 }
 
-/* 🍫 Chocolates */
-.chocolates {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    font-size: 30px;
-    animation: slide 5s infinite linear;
-}
-
-@keyframes slide {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
+.candle::after {
+    content: "";
+    width: 6px;
+    height: 10px;
+    background: orange;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
 }

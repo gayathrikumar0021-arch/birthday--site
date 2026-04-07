@@ -1,8 +1,6 @@
-function showSurprise() {
-    document.getElementById("surprise").style.display = "block";
+function nextSection(nextId) {
+    let sections = document.querySelectorAll(".section");
+    sections.forEach(sec => sec.classList.add("hidden"));
 
-    let music = document.getElementById("music");
-    music.play();
-
-    alert("🎉 Happy Birthday! 🎂");
+    document.getElementById(nextId).classList.remove("hidden");
 }
