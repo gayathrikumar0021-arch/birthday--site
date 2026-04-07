@@ -1,0 +1,54 @@
+/* 🎈 Balloons */
+.balloons {
+    position: fixed;
+    bottom: -100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.balloon {
+    width: 40px;
+    height: 60px;
+    background: red;
+    border-radius: 50%;
+    animation: float 6s infinite;
+}
+
+.balloon:nth-child(2) { background: blue; animation-delay: 1s; }
+.balloon:nth-child(3) { background: yellow; animation-delay: 2s; }
+.balloon:nth-child(4) { background: green; animation-delay: 3s; }
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-800px); }
+}
+
+/* 🎂 Cake animation */
+.cake {
+    font-size: 60px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-20px); }
+}
+
+/* 🍫 Chocolates */
+.chocolates {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    font-size: 30px;
+    animation: slide 5s infinite linear;
+}
+
+@keyframes slide {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
