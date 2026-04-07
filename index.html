@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday MaMa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 1️⃣ Welcome Screen -->
+<div id="welcome" class="section">
+    <h1>Welcome 💫</h1>
+    <button onclick="nextSection('main')">Enter</button>
+</div>
+
+<!-- 2️⃣ Birthday Message -->
+<div id="main" class="section hidden">
+    <h1>Happy Birthday, MaMa 🎂</h1>
+    <p>Wishing you happiness, success, and beautiful moments 💖</p>
+    <button onclick="nextSection('letter')">Next</button>
+</div>
+
+<!-- 3️⃣ Secret Letter -->
+<div id="letter" class="section hidden">
+    <h2>💌 A Letter for You</h2>
+    <p>
+        You are one of the most important people in us.  
+        I hope this year brings you everything you dream of.  
+        Stay happy always 💖
+    </p>
+    <button onclick="nextSection('gallery')">Next</button>
+</div>
+
+<!-- 4️⃣ Photo Gallery -->
+<div id="gallery" class="section hidden">
+    <h2>📸 Our Memories</h2>
+    <img src="e:\pic 1.jpeg" >
+    <img src="e:\pic 2.jpeg" >
+    <img src="e:\pic 3.jpeg" >
+    <button onclick="nextSection('cake')">Next</button>
+</div>
+
+<!-- 5️⃣ Cake Section -->
+<div id="cake" class="section hidden">
+    <h2>🎂 Make a Wish</h2>
+    <div class="cake">
+        🎂
+        <div class="candle"></div>
+    </div>
+    <p>Blow the candle and make a wish ✨</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
